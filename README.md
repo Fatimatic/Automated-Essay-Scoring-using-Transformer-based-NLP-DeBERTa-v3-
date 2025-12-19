@@ -8,7 +8,7 @@ Built an automated essay scoring system using DeBERTa v3 and transformer-based N
 Manual essay grading is time-consuming, subjective, and often biased toward essay length rather than writing quality.  
 This project presents an **Automated Essay Scoring (AES)** system using **transformer-based NLP** to evaluate essays consistently and fairly across multiple writing dimensions.
 
-We built a deep learning model using **DeBERTa v3 Small**, a state-of-the-art transformer architecture, to predict **six analytic writing rubrics** simultaneously.
+I built a deep learning model using **DeBERTa v3 Small**, a state-of-the-art transformer architecture, to predict **six analytic writing rubrics** simultaneously.
 
 ---
 
@@ -18,7 +18,7 @@ Human graders:
 - Can be inconsistent due to fatigue or bias
 - Struggle to score large volumes efficiently
 
-Our goal was to **automate essay scoring** while focusing on **quality, structure, and language proficiency** rather than content length.
+The goal was to **automate essay scoring** while focusing on **quality, structure, and language proficiency** rather than content length.
 
 ---
 
@@ -65,7 +65,7 @@ Six Rubric Score Predictions
 TF-IDF treats text as isolated word frequencies and **ignores context, grammar, and sentence structure**.  
 Essay quality depends on **semantic coherence and syntax**, which require contextual understanding.
 
-Hence, we moved to **transformer-based contextual embeddings**.
+Hence,I moved to **transformer-based contextual embeddings**.
 
 ---
 
@@ -97,7 +97,7 @@ Hence, we moved to **transformer-based contextual embeddings**.
 ---
 
 ## 📐 Evaluation Metric
-We used **Mean Column-wise Root Mean Squared Error (MCRMSE)**, which evaluates prediction error independently for each rubric and then averages them.
+I used **Mean Column-wise Root Mean Squared Error (MCRMSE)**, which evaluates prediction error independently for each rubric and then averages them.
 
 R² was not used due to **low variance in rubric scores**.
 
